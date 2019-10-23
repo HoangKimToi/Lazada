@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar_thanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/backgroundTooBar">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi tới :"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edit_tennguoinhan"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên người nhận :"
+            android:background="@drawable/boder_thanhtoan"/>
+        <EditText
+            android:id="@+id/edit_diachinguoinhan"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Địa chỉ người nhận :"
+            android:gravity="top"
+            android:background="@drawable/boder_thanhtoan"/>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edit_sodt_nguoinhan"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:background="@drawable/boder_thanhtoan"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tùy chọn giao hàng :"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imBtn_ship"
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ship"
+                android:scaleType="centerInside"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhận tiền khi giao hàng"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imBtn_visa"
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/visa"
+                android:scaleType="centerInside"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_visa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuyển khoản"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/cb_dieukhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đã đọc các điều khoản của ứng dụng"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btn_thanhtoan"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán"
+        android:background="@color/bgLogo"/>
+</LinearLayout>
